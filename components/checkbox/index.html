@@ -7,24 +7,34 @@
     </head>
     <body>
         <header>
-            <h1>Checkbox Component</h1>
+            <h2>Checkbox Component</h2>
         </header>
+        <hr><br>
         <main>
-
 
             <!-- Checkboxes -->
 
-            <label class="checkbox">One
-                <input type="checkbox" name="check1" checked="checked"/>
+            <label class="checkbox">Unchecked
+                <input type="checkbox">
+                <div class="checkbox-display"></div>
+            </label>
+            <label class="checkbox">Checked
+                <input type="checkbox" checked="checked">
                 <span class="checkbox-display"></span>
             </label>
-            <label class="checkbox">Two
-                <input type="checkbox" name="check1"/>
+
+            <br><br>
+
+            <label class="checkbox">Disabled
+                <input type="checkbox" disabled="disabled">
+                <span class="checkbox-display"></span>
+            </label>
+            <label class="checkbox">Disabled & Checked
+                <input type="checkbox" disabled="disabled" checked="checked">
                 <span class="checkbox-display"></span>
             </label>
 
             <!-- Checkboxes END -->
-
 
         </main>
         <script src="index.js"></script>
