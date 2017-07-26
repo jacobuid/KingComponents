@@ -1,0 +1,12 @@
+{
+  "name": "king-components",
+  "version": "1.0.0",
+  "description": "Components fit for a King, Easy, Fast, &amp; Modular",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacobuid/KingComponents.git"
+  },
+  "author": "Jacob King (jacobuid)",
+  "license": "ISC",
+  "homepage": "https://github.com/jacobuid/KingComponents#readme"
+}
