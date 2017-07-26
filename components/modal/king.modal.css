@@ -1,0 +1,30 @@
+body.king-modal-open{ overflow:hidden }
+
+.king-modal-scrim{ display:none; position:fixed; top:0; right:0; bottom:0; left:0; background-color:rgba(0,0,0, 0.8); overflow-x:hidden; overflow-y:auto; z-index: 90; }
+
+.king-modal{ background-color:#fff; box-sizing: border-box; margin: 30px auto; max-width:90%;
+  -webkit-transform: translate(0,0);
+  -o-transform: translate(0,0);
+  transform: translate(0,0);
+}
+
+.king-modal-header {  padding:15px;  box-sizing: border-box;  overflow: hidden; border-bottom: 1px solid #eee;  }
+
+.king-modal-header .king-modal-close {  margin:0;  font-size: 26px;  cursor: pointer;  float: right;  }
+.king-modal-header .king-modal-title {  margin:0;  font-size:22px;  }
+
+.king-modal-content { padding:0 15px;  overflow-x: hidden;  overflow-y: auto;  box-sizing: border-box;  }
+.king-modal-footer { padding:15px; box-sizing: border-box;  overflow: hidden;  border-top: 1px solid #eee;  }
+
+
+.king-modal.king-modal-fixed{ position: relative; left: 50%; top: 50%; max-width:90%; margin:0;
+  -webkit-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.king-modal.king-modal-left { position: absolute; top: 0; left: 0; width:0; margin:0; }
+.king-modal.king-modal-right { position: absolute; top: 0; right: 0; width:0; margin:0; }
+.king-modal.king-modal-top { position: absolute; top: 0; right: 0; left:0; height:0; margin:0; max-width:none }
+.king-modal.king-modal-bottom { position: absolute; bottom: 0; right: 0; left:0; height:0; margin:0; max-width:none }
+

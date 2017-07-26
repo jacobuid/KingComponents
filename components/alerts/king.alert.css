@@ -1,0 +1,50 @@
+/* RAUL Alerts
+-------------------------------------------- */
+
+.alert {
+  color: #181A1b;
+  border-radius: 0;
+  padding: .75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 2px solid transparent;
+}
+
+.alert.king-info-alert {
+  border-color: #0076CC;
+  background-color: #E5F4FF;
+}
+
+.alert.king-success-alert {
+  border-color: #1BC35C;
+  background-color: #E2F4EC;
+}
+
+.alert.king-warning-alert {
+  border-color: #FFC200;
+  background-color: #FFFEE5;
+}
+
+.alert.king-danger-alert {
+  border-color: #EC231F;
+  background-color: #FFF4F0;
+}
+
+.alert.king-info-alert i {
+  color: #0076CC;
+  margin-right: 10px;
+}
+
+.alert.king-success-alert i {
+  color: #1BC35C;
+  margin-right: 10px;
+}
+
+.alert.king-warning-alert i {
+  color: #FFC200;
+  margin-right: 10px;
+}
+
+.alert.king-danger-alert i {
+  color: #EC231F;
+  margin-right: 10px;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="king.alert.css">
+    <style>
+        .container { width:800px; margin:0 auto; }
+    </style>
+</head>
+<body>
+
+    <section class="container">
+
+        <h4>Alert Info</h4>
+        <p>This component is not dependent on bootstrap CSS</p>
+
+        <hr>
+
+        <div id="show-alerts"></div>
+
+        <hr>
+
+        <button class="info">Show Info Alert</button>
+
+        <hr>
+
+        <button class="success">Show Success Alert</button>
+
+        <hr>
+
+        <button class="warning">Show Warning Alert</button>
+
+        <hr>
+
+        <button class="danger">Show Danger Alert</button>
+
+        <hr>
+
+        <button class="persist-danger">Show Persisting Danger Alert</button>
+
+        <hr>
+
+        <button class="clear-alerts">Clear all Alerts</button>
+
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="king.alert.js"></script>
+    <script>
+
+
+        $(".info").on('click', function(){
+            $('#show-alerts').king_alert({
+                type:'info',
+                message: 'This is an info alert',
+                timeout: 10000,
+                icon:false
+            });
+        });
+
+        $(".success").on('click', function(){
+            $('#show-alerts').king_alert({
+                type:'success',
+                message: 'This is a success alert',
+                timeout: 10000
+            });
+        });
+
+        $(".warning").on('click', function(){
+            $('#show-alerts').king_alert({
+                type:'warning',
+                message: 'This is a warning alert',
+                timeout: 10000
+            });
+        });
+
+        $(".danger").on('click', function(){
+            $('#show-alerts').king_alert({
+                type:'danger',
+                message: 'This is a danger alert',
+                timeout: 10000
+            });
+        });
+
+        $(".persist-danger").on('click', function(){
+            $('#show-alerts').king_alert({
+                type:'danger',
+                message: 'This is a persisting danger alert'
+            });
+        });
+
+        $(".clear-alerts").on('click', function(){
+            $('#show-alerts').king_alert('clear');
+        });
+
+
+    </script>
+</body>
+</html>

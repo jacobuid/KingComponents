@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="king.tooltip.css">
+</head>
+<body>
+
+    <section class="container">
+
+        <h3>Tooltips</h3>
+        <p>This component is not dependent on bootstrap CSS</p>
+
+        <br>
+        <hr>
+        <br>
+
+        <h4>Directions</h4>
+        <button class="btn btn-default" aria-label="Left Tooltip!" data-tooltip="Left Tooltip!" data-tooltip-pos="left">Show me!</button>
+        <button class="btn btn-default" aria-label="Bottom Tooltip!" data-tooltip="Bottom Tooltip!" data-tooltip-pos="down">Show me!</button>
+        <button class="btn btn-default" aria-label="Top Tooltip!" data-tooltip="Top Tooltip!" data-tooltip-pos="up">Show me!</button>
+        <button class="btn btn-default" aria-label="Right Tooltip!" data-tooltip="Right Tooltip!" data-tooltip-pos="right">Show me!</button>
+
+
+        <br>
+        <hr>
+        <br>
+
+        <h4>Sizes</h4>
+        <button class="btn btn-default" aria-label="100px" data-tooltip="100px" data-tooltip-size="100">Hover me!</button>
+        <button class="btn btn-default" aria-label="150px" data-tooltip="150px" data-tooltip-size="150">Hover me!</button>
+        <button class="btn btn-default" aria-label="200px" data-tooltip="200px" data-tooltip-size="200">Hover me!</button>
+        <button class="btn btn-default" aria-label="250px" data-tooltip="250px" data-tooltip-size="250">Hover me!</button>
+        <br><br>
+        <br><br>
+        <button class="btn btn-default" style="width:260px" data-tooltip="Full Width of Target" data-tooltip-size="fit">Hover me!</button>
+
+        <br>
+        <hr>
+        <br>
+
+        <h4>Always Show</h4>
+        <button class="btn btn-default" aria-label="Left Tooltip!" data-tooltip="Left Tooltip!" data-tooltip-pos="left" data-tooltip-show>Always Show!</button>
+        <button class="btn btn-default" aria-label="Bottom Tooltip!" data-tooltip="Bottom Tooltip!" data-tooltip-pos="down" data-tooltip-show>Always Show!</button>
+        <button class="btn btn-default" aria-label="Top Tooltip!" data-tooltip="Top Tooltip!" data-tooltip-pos="up" data-tooltip-show>Always Show!</button>
+        <button class="btn btn-default" aria-label="Right Tooltip!" data-tooltip="Right Tooltip!" data-tooltip-pos="right" data-tooltip-show>Always Show!</button>
+
+        <hr style="margin-top:60px; margin-bottom:60px">
+
+        <p>Lorem <u data-tooltip="Underlined Text!" data-tooltip-pos="right">ipsum</u> dolor sit amet, consectetur adipiscing <strong data-tooltip="Bold Text!" data-tooltip-pos="left">elit</strong>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim <small data-tooltip="Small Text!" data-tooltip-pos="top">veniam</small>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id <em data-tooltip="Italic Text!" data-tooltip-pos="top">est</em> laborum.</p>
+
+    </section>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+</body>
+</html>
