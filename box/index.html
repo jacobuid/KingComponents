@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="king.box.css">
+</head>
+<body>
+
+    <section class="container">
+
+        <h4>Box Default</h4>
+        <p>This component is not dependent on bootstrap CSS</p>
+
+        <div class="king-box">
+            <div class="king-box-block">
+                Box content
+            </div>
+        </div>
+
+        <hr style="margin:30px 0">
+
+        <div class="king-box">
+            <div class="king-box-header">
+                <h3 class="king-box-title">Box title</h3>
+            </div>
+            <div class="king-box-block">
+                Box content
+            </div>
+            <div class="king-box-footer">Box footer</div>
+        </div>
+
+        <hr style="margin:30px 0">
+
+        <div id="boxTwo" class="king-box king-box-disabled">
+            <div class="king-box-header">
+                <h3 class="king-box-title">Box title</h3>
+            </div>
+            <div class="king-box-block">
+                Box content
+            </div>
+        </div>
+
+        <hr style="margin:30px 0">
+
+        <div id="boxThree" class="king-box king-box-disabled">
+            <div class="king-box-header">
+                <h3 class="king-box-title">Box title</h3>
+            </div>
+            <div class="king-box-block">
+                Box content
+            </div>
+        </div>
+
+        <hr style="margin:30px 0">
+
+        <div class="king-box">
+            <div class="king-box-block">
+                Box content
+            </div>
+            <div class="king-box-footer">Box footer</div>
+        </div>
+
+        <hr style="margin:30px 0">
+
+        <div class="king-box">
+            <div class="king-box-header">
+                <h3 class="king-box-title">Box title</h3>
+                <p class="king-box-sub">Box Subheader content</p>
+            </div>
+            <div class="king-box-block">
+                Box content
+            </div>
+        </div>
+
+        <hr style="margin:30px 0">
+
+        <div class="king-box king-box-disabled">
+            <div class="king-box-header">
+                <h3 class="king-box-title">Box title</h3>
+                <p class="king-box-sub">Box Subheader content</p>
+            </div>
+            <div class="king-box-block">
+                Box content
+            </div>
+        </div>
+
+
+    </section>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="king.box.js"></script>
+    <script>
+        $('#boxTwo').king_box({
+            collapsible: true,
+            open:false
+        });
+
+        $('#boxThree').king_box({
+            collapsible: true,
+            open:true
+        })
+    </script>
+</body>
+</html>

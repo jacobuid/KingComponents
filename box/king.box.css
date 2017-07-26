@@ -1,0 +1,63 @@
+/* RAUL Box
+-------------------------------------------- */
+.king-box {
+  border-left: none;
+  border-right: none;
+  border-color: #E4E6E7;
+  border-radius: 0;
+  background-color: #FFF;
+}
+
+.king-box .king-box-header {
+  background-color: #336633;
+  color: #FFF;
+  border: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  padding: 12px 20px;
+}
+
+.king-box.king-box-disabled .king-box-header {
+  background-color: #E4E6E7;
+  color: inherit;
+}
+
+.king-box .king-box-header .king-box-title {
+  font-weight: normal;
+  font-size: 20px;
+  margin: 0;
+}
+
+.king-box .king-box-header .king-box-sub {
+  margin: 0;
+  font-size: 14px;
+}
+
+.king-box .king-box-header .king-box-action {
+  float: right;
+  font-size: 22px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.king-box .king-box-block {
+  border-right: 1px solid #E4E6E7;
+  border-left: 1px solid #E4E6E7;
+  padding: 15px 20px;
+}
+
+.king-box .king-box-footer {
+  border-top: 0;
+  background-color: #E4E6E7;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  padding: 12px 20px;
+}
+
+.king-box .king-box-block:first-of-type {
+  border-top: 1px solid #E4E6E7;
+}
+
+.king-box .king-box-block:last-of-type {
+  border-bottom: 1px solid #E4E6E7;
+}
